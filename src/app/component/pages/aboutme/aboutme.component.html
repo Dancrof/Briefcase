@@ -1,0 +1,34 @@
+<section class="wrapper">
+    <div class="perfil-img">
+        <img class="perfil" src="../../../../assets/img/about/perfil.png" alt="Perfil" />
+    </div>
+    <div class="contenido">
+        <h2 class="titulo">About me</h2>
+        <p class="texto">
+            Hola, soy Software Developer con ganas de seguir aprendiendo nuevas tecnologias y expandir mis horizontes. Como programador junior tengo un dominio basico de la sintaxis y la logica de programacion.
+        </p>
+    </div>
+</section>
+<!--inicio estructura de Conocimientos-->
+<div class="fondo">
+    <section class="Lenguajes">
+        <h2 class="titulo">Conocimientos</h2>
+        <div class="items">
+            <figure class="card" *ngFor="let kno of knowledge ">
+                <img [src]="kno.imageUrl" [alt]="kno.titulo" />
+                <h4 class="card-texto">
+                    {{kno.titulo}}
+                </h4>
+            </figure>
+        </div>
+    </section>
+</div>
+<section class="areas">
+    <h2 class="titulo">Frameworks</h2>
+    <div class="items">
+        <figure class="card" *ngFor="let frame of Frameworks">
+            <img [src]="frame.imageUrl" [alt]="frame.titulo" />
+            <h4 class="card-texto">{{frame.titulo}}</h4>
+        </figure>
+    </div>
+</section>

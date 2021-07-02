@@ -1,0 +1,17 @@
+<header>
+    <nav class="wrapper">
+        <div class="logo">Programar es mi pasión</div>
+        <ul class="menu" [ngClass]="{'menuActive': show == false}">
+            <li>
+                <a routerLink="/" class="opmenu" (click)="show = !show">Home</a>
+            </li>
+            <li>
+                <a routerLink="/briefcase/About" class="opmenu" (click)="show = !show">About me</a>
+            </li>
+            <li>
+                <a routerLink="/briefcase/proyects" class="opmenu" (click)="show = !show">Proyects</a>
+            </li>
+        </ul>
+        <i class="fas fa-bars iconMenu" (click)="show = !show"></i>
+    </nav>
+</header>

@@ -1,0 +1,15 @@
+<section id="proyectos" class="wrapper">
+    <h2 class="titulo">My Proyects</h2>
+
+    <div class="items">
+
+        <div class="item" *ngFor="let proyet of proyects">
+            <img [src]="proyet.imageUrl" [alt]="proyet.titulo">
+            <div class="fondo-caja">
+                <a [href]="proyet.proyectUrl" target="blank">
+                    <h4>{{proyet.titulo}}</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
